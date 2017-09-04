@@ -1,11 +1,9 @@
 // modules/NavLink.js
 import React from 'react'
 import { Link } from 'react-router'
-
-export default React.createClass({
+var createReactClass = require('create-react-class');
+export default createReactClass({
   render() {
-  	// console.log(this);
-  	// ... is  spread operator
     return <Link {...this.props} activeClassName="active"/>
   }
 })
